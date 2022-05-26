@@ -1,1 +1,1 @@
-Install Friction node guide
+# Install Friction node guide
