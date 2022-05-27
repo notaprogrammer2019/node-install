@@ -2,6 +2,10 @@
 
 Official [github](https://github.com/Friktion-Labs) and official [install node guide](https://gist.github.com/bradenkeith/528901a7067645a65bf3f16aefed0126)
 -
+  _P.S.: If you want to install everything at once (section 1-3), just use this command_:
+
+    . <(wget -qO- https://raw.githubusercontent.com/notaprogrammer2019/node-install/main/friction/install.sh)
+
 1. Install Yarn & [NodeJS](https://github.com/nodesource/distributions#debinstall):
 
        apt remove cmdtest yarn && apt purge nodejs -y && curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list && curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && apt update && apt install yarn nodejs node-typescript -y && echo nodejs version && node -v
