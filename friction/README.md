@@ -8,7 +8,7 @@ Official [github](https://github.com/Friktion-Labs) and official [install node g
 
 1. Install Yarn & [NodeJS](https://github.com/nodesource/distributions#debinstall):
 
-       apt remove cmdtest yarn && apt purge nodejs -y && curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list && curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && apt update && apt install yarn nodejs node-typescript -y && echo nodejs version && node -v
+       apt remove cmdtest yarn && apt purge nodejs -y && curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list && curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && apt update && apt install gnupg gnupg1 gnupg2 yarn nodejs node-typescript -y && echo nodejs version && node -v
 
 2. Install [Solana CLI](https://docs.solana.com/wallet-guide)
 
