@@ -34,7 +34,7 @@ Official [github](https://github.com/Friktion-Labs) and official [install node g
        solana address - show public key
        solana transfer - transfer SOL
 
-5. Running the keeper as a Daemon
+6. Running the keeper as a Daemon
 
        nano /usr/local/bin/keeper.sh
       and paste
@@ -57,10 +57,13 @@ Official [github](https://github.com/Friktion-Labs) and official [install node g
        
        [Install]
        WantedBy=multi-user.target" > /etc/systemd/system/keeper.service
-6. Give permissions to files and enable keeper as a Daemon
+7. Give permissions to files and enable keeper as a Daemon
 
-chmod 744 /usr/local/bin/keeper.sh && chmod 644 /etc/systemd/system/keeper.service && systemctl enable keeper.service
+       chmod 744 /usr/local/bin/keeper.sh && chmod 644 /etc/systemd/system/keeper.service && systemctl enable keeper.service
 
-7. Start keeper
+8. Start keeper
 
        systemctl restart keeper.service
+9. Logs
+
+       sudo journalctl -u keeper.service -f
