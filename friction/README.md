@@ -19,7 +19,7 @@ Official [github](https://github.com/Friktion-Labs) and official [install node g
        nano $HOME/friktion/entropy-client/src/keeper.ts
       Replace the string  `entropy-mainnet-authority` into `id`
       
-5. Create or restore solana wallet (**SAVING SEED PHASE**)
+5. Create or restore solana wallet (**SAVING SEED PHASE**). The wallet should have some SOL (0.1 SOL or more)
 
     Create new wallet
 
