@@ -8,7 +8,7 @@ Official releases https://github.com/massalabs/massa/releases
 
    1. "no brain" install:
    
-    . <(wget -qO- https://raw.githubusercontent.com/notaprogrammer2019/massa-repo/main/massa_node_instal.sh)
+    . <(wget -qO- https://raw.githubusercontent.com/notaprogrammer2019/node-install/main/Massa/massa_node_instal.sh)
         
    2. Logs: 
    
