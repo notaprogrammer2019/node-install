@@ -17,4 +17,4 @@ RestartSec=3
 LimitNOFILE=65535
 
 [Install]
-WantedBy=multi-user.target" > /etc/systemd/system/massanode.service && systemctl daemon-reload && systemctl enable massanode && systemctl restart massanode
+WantedBy=multi-user.target" > /etc/systemd/system/massanode.service
