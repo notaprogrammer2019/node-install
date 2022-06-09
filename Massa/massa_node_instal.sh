@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apt install wget jq pkg-config curl git build-essential libssl-dev -y
+apt install wget jq pkg-config curl git build-essential libssl-dev libclang-dev -y
 
 vers=`wget -qO- https://api.github.com/repos/massalabs/massa/releases/latest | jq -r ".tag_name"`
 
