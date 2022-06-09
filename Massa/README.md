@@ -1,6 +1,6 @@
 # massa-repo
 
-Official github https://github.com/massalabs and official install node https://github.com/massalabs/massa/wiki/install
+Official github https://github.com/massalabs and official install node https://massa.readthedocs.io/en/latest/index.html
 
 Official releases https://github.com/massalabs/massa/releases
 
