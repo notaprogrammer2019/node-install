@@ -17,4 +17,7 @@ RestartSec=3
 LimitNOFILE=65535
 
 [Install]
-WantedBy=multi-user.target" > /etc/systemd/system/massanode.service
+WantedBy=multi-user.target" > /etc/systemd/system/massanode.service && sudo tee <<EOF >/dev/null $HOME/massa/massa-node/config/config.toml 
+[network]
+routable_ip = "`wget -qO- eth0.me`"
+EOF
