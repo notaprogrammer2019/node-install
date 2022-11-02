@@ -12,8 +12,8 @@ Official releases https://github.com/massalabs/massa/releases
         
    2. Logs: 
    
-    journalctl -u massanode -f
+    systemctl daemon-reload && systemctl enable massanode && systemctl restart massanode
 
    3.
    
-    systemctl daemon-reload && systemctl enable massanode && systemctl restart massanode
+    journalctl -u massanode -f
