@@ -22,4 +22,4 @@ WantedBy=multi-user.target" > /etc/systemd/system/massanode.service && sudo tee 
 routable_ip = "`wget -qO- eth0.me`"
 EOF
 
- ufw allow 31244 && ufw allow 31245
+ufw allow 31244 && ufw allow 31245
