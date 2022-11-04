@@ -1,1 +1,1 @@
-apt install wget jq curl ufw git htop glances -y && git clone https://github.com/notaprogrammer2019/duf.git /root/duf && cd duf && go build && mv /root/duf/duf /usr/local/bin && rm -rf /root/duf
+apt install wget jq curl ufw git htop glances -y && wget https://go.dev/dl/go1.19.3.linux-amd64.tar.gz && rm -rf /usr/local/go && tar -C /usr/local -xzf go1.19.3.linux-amd64.tar.gz && export PATH=$PATH:/usr/local/go/bin && go version && git clone https://github.com/notaprogrammer2019/duf.git /root/duf && cd duf && go build && mv /root/duf/duf /usr/local/bin && rm -rf /root/duf
