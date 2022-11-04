@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apt install pkg-config build-essential libssl-dev libclang-dev -y && ufw allow 31244 && ufw allow 31245
+apt install pkg-config build-essential libssl-dev libclang-dev -y
 
 vers=`wget -qO- https://api.github.com/repos/massalabs/massa/releases/latest | jq -r ".tag_name"`
 
@@ -21,3 +21,5 @@ WantedBy=multi-user.target" > /etc/systemd/system/massanode.service && sudo tee 
 [network]
 routable_ip = "`wget -qO- eth0.me`"
 EOF
+
+ ufw allow 31244 && ufw allow 31245
