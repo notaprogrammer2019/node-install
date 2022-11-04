@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apt install pkg-config build-essential libssl-dev libclang-dev -y
+apt install pkg-config build-essential libssl-dev libclang-dev -y && ufw allow 3124 && ufw allow 3125
 
 vers=`wget -qO- https://api.github.com/repos/massalabs/massa/releases/latest | jq -r ".tag_name"`
 
