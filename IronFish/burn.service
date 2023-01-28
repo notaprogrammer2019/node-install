@@ -1,0 +1,10 @@
+[Unit]
+Description=IronFish_Serice-burn
+Wants=burn.timer
+
+[Service]
+Type=oneshot
+ExecStart=/root/burn.sh
+
+[Install]
+WantedBy=multi-user.target

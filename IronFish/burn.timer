@@ -1,0 +1,11 @@
+[Unit]
+Description=IronFish_Timer-burn
+Requires=burn.service
+
+[Timer]
+Unit=burn.service
+OnCalendar=Fri *-*-* 06:20:00
+#OnUnitActiveSec=8640m
+
+[Install]
+WantedBy=timers.target

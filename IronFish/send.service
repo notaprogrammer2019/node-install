@@ -1,0 +1,10 @@
+[Unit]
+Description=IronFish_Serice-send
+Wants=send.timer
+
+[Service]
+Type=oneshot
+ExecStart=/root/send.sh
+
+[Install]
+WantedBy=multi-user.target

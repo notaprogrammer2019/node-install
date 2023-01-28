@@ -1,0 +1,10 @@
+[Unit]
+Description=IronFish_Serice-mint
+Wants=mint.timer
+
+[Service]
+Type=oneshot
+ExecStart=/root/mint.sh
+
+[Install]
+WantedBy=multi-user.target
