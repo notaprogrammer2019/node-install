@@ -11,7 +11,7 @@ After=network-online.target
 [Service]
 User=root
 WorkingDirectory=$HOME/massa/massa-node
-ExecStart=$HOME/massa/massa-node/massa-node
+ExecStart=$HOME/massa/massa-node/massa-node -p
 Restart=on-failure
 RestartSec=3
 LimitNOFILE=65535
