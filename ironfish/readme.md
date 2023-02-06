@@ -2,7 +2,7 @@
 
    1. Generate services and timers:
    
-    . <(wget -qO- https://raw.githubusercontent.com/notaprogrammer2019/node-install/main/Massa/ironfish/auto_mint-burn-send.sh)
+    . <(wget -qO- https://raw.githubusercontent.com/notaprogrammer2019/node-install/main/ironfish/generate_sevices-timers.sh)
         
    2. Adding to the autoload: 
    
