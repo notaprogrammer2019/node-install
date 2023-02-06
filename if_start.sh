@@ -1,1 +1,0 @@
-docker run -dit --name node --restart always --network host -v /root/.ironfish:/root/.ironfish ghcr.io/iron-fish/ironfish:latest && docker exec -i node ironfish config:set nodeName $(hostname) && docker exec -i node ironfish config:set blockGraffiti $(hostname) && docker exec -i node ironfish config:set enableTelemetry true && docker restart node
