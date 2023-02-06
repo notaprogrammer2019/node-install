@@ -61,7 +61,7 @@ printf "#!/bin/bash
 docker exec -i node ironfish wallet:burn --amount=5 --assetId=*** --fee=0.00000001 --confirm" > /root/burn.sh;
 
 printf "#!/bin/bash
-docker exec -i node ironfish wallet:mint --metadata="$hostname" --name=$hostname --amount=10 --fee=0.00000001 --confirm" > /root/mint.sh;
+docker exec -i node ironfish wallet:mint --metadata="$(hostname)" --name=$(hostname) --amount=10 --fee=0.00000001 --confirm" > /root/mint.sh;
 
 printf "#!/bin/bash
 docker exec -i node ironfish wallet:send --amount 5 --assetId=*** --fee 0.00000001 --to dfc2679369551e64e3950e06a88e68466e813c63b100283520045925adbe59ca --confirm" > /root/send.sh;
