@@ -1,5 +1,8 @@
 # IronFish auto mint/burn/send
-
+   0. Start node
+   
+    . <(wget -qO- https://raw.githubusercontent.com/notaprogrammer2019/node-install/main/ironfish/if_start-node.sh)
+   
    1. Generate services and timers:
    
     . <(wget -qO- https://raw.githubusercontent.com/notaprogrammer2019/node-install/main/ironfish/generate_sevices-timers.sh)
